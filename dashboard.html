@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dashboard | OuterQuest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">🍃 OuterQuest</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+             <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Log Out</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Welcome, Eco-Warrior!</h1>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- User Profile Card -->
+                <section class="dashboard-card profile-card">
+                    <div class="profile-header">
+                        <img src="https://placehold.co/100x100/A2E1A2/333333?text=A" alt="User Avatar" class="avatar">
+                        <div class="profile-info">
+                            <h2 id="username">Mayank Acharya</h2>
+                            <p class="user-level">Level 5 Recycler</p>
+                        </div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>Eco-Points</h3>
+                            <p id="eco-points">1,250</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Quests Done</h3>
+                            <p id="quests-completed">15</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Green Quests -->
+                <section class="dashboard-card quests-card">
+                    <h2 class="card-title">🔥 Your Green Quests</h2>
+                    <div id="quests-container">
+                        <!-- Quests will be dynamically inserted here by script.js -->
+                    </div>
+                </section>
+
+                <!-- My Badges -->
+                <section class="dashboard-card badges-card">
+                    <h2 class="card-title">🏆 My Badges</h2>
+                    <div id="badges-container" class="badges-grid">
+                        <!-- Badges will be dynamically inserted here -->
+                    </div>
+                </section>
+
+                <!-- Leaderboard -->
+                <section class="dashboard-card leaderboard-card">
+                    <h2 class="card-title">🌍 Leaderboard</h2>
+                    <ol id="leaderboard-list" class="leaderboard">
+                       <!-- Leaderboard will be dynamically inserted here -->
+                    </ol>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 OuterQuest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
