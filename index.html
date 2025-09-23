@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OuterQuest - Gamified Environmental Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html" class="logo">🍃 OuterQuest</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="progress.html">Progress</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <h1>Your Environmental Education, Gamified.</h1>
+        <p>Join challenges, complete quests, and earn rewards while making a real-world impact. Learning to protect our planet has never been this fun.</p>
+        <a href="dashboard.html" class="btn btn-primary btn-large">Start Your Quest</a>
+      </div>
+    </section>
+    
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <!-- Eco News Card -->
+                <div class="info-card">
+                    <h3><i class="fas fa-newspaper"></i> Local Eco News</h3>
+                    <article id="eco-news">
+                        <h4>Bhubaneswar Launches 'Clean City' Drive</h4>
+                        <p>A new city-wide initiative aims to reduce plastic waste near the Bindusagar Lake, starting this weekend.</p>
+                    </article>
+                </div>
+                <!-- Fact of the Day Card -->
+                <div class="info-card">
+                    <h3><i class="fas fa-lightbulb"></i> Fact of the Day</h3>
+                    <p id="fact-of-the-day">Loading fact...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="features-section">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Learn</h3>
+            <p>Explore interactive modules about climate change, recycling, and conservation.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Act</h3>
+            <p>Complete real-world "Green Quests" like planting a tree or saving water.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h3>Earn</h3>
+            <p>Gain Eco-Points, unlock badges, and climb the leaderboard as you make an impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section class="why-section">
+        <div class="container">
+            <h2>Why OuterQuest?</h2>
+            <p>We're turning passive learning into active participation. Our platform makes environmental education engaging and rewarding, empowering you to become a change-maker for a greener tomorrow.</p>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 OuterQuest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
