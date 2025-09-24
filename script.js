@@ -210,3 +210,68 @@ function initQuiz() {
 
     loadQuestion();
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const signupForm = document.querySelector(".auth-form");
+
+  signupForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const fullName = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    try {
+      const res = await fetch("http://localhost:4000/api/auth/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ fullName, email, password }),
+      });
+
+      const data = await res.json();
+      console.log(data);
+
+      if (res.ok) {
+        alert("✅ Signup successful!");
+        
+        window.location.href = "login.html";
+      } else {
+        alert("❌ " + (data.message || "Signup failed"));
+      }
+    } catch (err) {
+      console.error(err);
+      alert("⚠️ Error connecting to server");
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const loginForm = document.querySelector(".auth-form");
+
+  if (loginForm) {
+    loginForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      try {
+        const res = await fetch("http://localhost:4000/api/auth/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, password }),
+        });
+
+        const data = await res.json();
+        console.log(data);
+
+        if (res.ok) {
+          alert("✅ Login successful!");
+          
+          window.location.href = "index.html";}
+       
+      } catch (err) {
+        console.error(err);
+        alert("⚠️ Error connecting to server");
+      }
+    });
+  }
+});
