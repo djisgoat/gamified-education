@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Quiz | OuterQuest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html" class="logo">🍃 OuterQuest</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+          <li><a href="progress.html">Progress</a></li>
+           <li><a href="dashboard.html">Dashboard</a></li>
+           <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn btn-outline">Log In</a>
+        <a href="signup.html" class="btn btn-primary">Sign Up</a>
+      </div>
+       <button class="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <div class="quiz-container">
+        <h1 class="page-title">Eco Quiz Challenge</h1>
+        <div id="quiz">
+          <p id="question-text" class="quiz-question">Loading question...</p>
+          <div id="options" class="quiz-options"></div>
+          <div class="quiz-footer">
+            <p id="score" class="quiz-score"></p>
+            <button id="next-btn" class="btn btn-primary">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 OuterQuest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
