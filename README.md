@@ -26,9 +26,9 @@ Gamified Education is a learning platform that combines traditional education wi
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React / Vue / Angular (specify what you're using)
-- **Backend:** Node.js / Django / Flask / Firebase / etc.
-- **Database:** MongoDB / PostgreSQL / Firebase Realtime DB / etc.
-- **Authentication:** Firebase Auth / Auth0 / JWT
+- **Frontend:** React / HTML/CSS / JS
+- **Backend:** Node.js / Express.js
+- **Database:** MongoDB 
+- **Authentication:**  JWT
 - **Gamification Engine:** Custom / Third-party (e.g. Gameful, Classcraft)
 
